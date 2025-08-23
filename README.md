@@ -43,9 +43,7 @@ blog/
 ├── styles.css                    # CSS styles
 ├── post-template.html            # Template for new posts
 ├── posts/                        # Individual post files
-│   ├── the-art-of-doing-nothing.html
-│   ├── morning-rituals.html
-│   └── beginnings.html
+│   ├── första-veckan.html
 ├── images/                       # Image folder
 └── README.md                     # This file
 ```
@@ -140,7 +138,7 @@ Edit `styles.css` to customize:
 Update the header section in `index.html` and all post files:
 ```html
 <h1 class="blog-title"><a href="../index.html">och inget mer hände</a></h1>
-<p class="blog-subtitle">thoughts, moments, and the spaces in between</p>
+<p class="blog-subtitle">...or updates on what I remember from last week in Stockholm</p>
 ```
 
 ## Tips for Weekly Blog Posts
