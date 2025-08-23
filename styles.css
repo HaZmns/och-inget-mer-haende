@@ -16,22 +16,23 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 80px; /* Increased from 20px to 60px for more space */
+    padding: 0 160px; /* Increased from 20px to 60px for more space */
 }
 
 /* Header */
 header {
-    padding: 30px 0 10px;
+    padding: 20px 0 20px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .blog-title {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
-    color: #2c2c2c;
-    margin-bottom: 10px;
+    color: #08485f;
+    margin-bottom: 5px;
+    margin-top: 15px;
     letter-spacing: 0.2em;
     line-height: 1.2;
     text-transform: uppercase;
@@ -50,19 +51,19 @@ header {
 
 .blog-subtitle {
     font-size: 0.8rem;
-    color: #666;
+    color: #08485f;
     font-weight: 300;
     letter-spacing: 0.05em;
 }
 
 /* Blog posts */
 .blog-posts {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .post, .post-preview {
-    margin-bottom: 80px;
-    padding-bottom: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -102,11 +103,11 @@ header {
 }
 
 .post-content, .post-excerpt {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .post-content p, .post-excerpt p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.1rem;
     line-height: 1.7;
     color: #444;
@@ -117,8 +118,25 @@ header {
     margin-bottom: 0;
 }
 
+/* Specific styling for post preview text on main page */
+.post-preview .post-excerpt p {
+    font-size: 1.0rem; 
+    line-height: 1.6;
+    color: #555;
+    font-weight: 300;
+}
+
+.post-preview .post-title {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+.post-preview .post-meta time {
+    font-size: 1rem; /* Larger date for post previews */
+}
+
 .post-image {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .post-image img {
@@ -131,11 +149,12 @@ header {
 
 /* Specific styling for post preview images (main page) */
 .post-preview .post-image img {
-    width: 25%; /* Make preview images smaller */
+    width: 40%; /* Make preview images smaller */
     max-width: 400px; /* Maximum width */
     height: auto;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0; /* Remove rounded edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 }
 
 .post-image img:hover {
@@ -149,15 +168,15 @@ header {
 }
 
 .read-more {
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .read-more a {
-    color: #666;
+    color: #08485f;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
     transition: color 0.3s ease;
+    font-size: 0.9rem; 
+    font-weight: 300;
 }
 
 .read-more a:hover {
@@ -203,16 +222,25 @@ footer p {
     }
     
     .post-title {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
     }
     
     .post-content p, .post-excerpt p {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    /* Mobile adjustments for post previews */
+    .post-preview .post-excerpt p {
+        font-size: 1.1rem;
+    }
+    
+    .post-preview .post-title {
+        font-size: 1.8rem;
     }
     
     .post-image {
-        margin-top: 20px;
+        margin-top: 30px;
     }
     
     /* Make preview images smaller on mobile */
@@ -237,6 +265,15 @@ footer p {
     
     .post-content p, .post-excerpt p {
         font-size: 0.95rem;
+    }
+    
+    /* Small mobile adjustments for post previews */
+    .post-preview .post-excerpt p {
+        font-size: 1.0rem;
+    }
+    
+    .post-preview .post-title {
+        font-size: 1.5rem;
     }
     
     /* Make preview images full width on very small screens */
