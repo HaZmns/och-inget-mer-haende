@@ -93,6 +93,16 @@ header {
     letter-spacing: -0.01em;
 }
 
+.post-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #27215b;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
 .post-title a {
     color: #2c2c2c;
     text-decoration: none;
