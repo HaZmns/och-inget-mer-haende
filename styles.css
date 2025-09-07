@@ -151,7 +151,7 @@ header {
 }
 
 .post-image img {
-    width: 30%;
+    width: 70%;
     height: auto;
     border-radius: 0px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -160,8 +160,8 @@ header {
 
 /* Specific styling for post preview images (main page) */
 .post-preview .post-image img {
-    width: 40%; /* Make preview images smaller */
-    max-width: 400px; /* Maximum width */
+    width: 40%;
+    max-width: 600px; /* Maximum width */
     height: auto;
     border-radius: 0; /* Remove rounded edges */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
