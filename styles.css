@@ -194,6 +194,9 @@ header {
     color: #2c2c2c;
 }
 
+.eingerueckt p {
+    margin-left: 20px;
+  }
 /* Footer */
 footer {
     padding: 40px 0;
