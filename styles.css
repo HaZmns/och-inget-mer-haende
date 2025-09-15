@@ -194,9 +194,14 @@ header {
     color: #2c2c2c;
 }
 
-.eingerueckt p {
-    margin-left: 20px;
-  }
+.eingerueckt {
+    margin-left: 30px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #444;
+    font-weight: 300;
+}
+
 /* Footer */
 footer {
     padding: 40px 0;
