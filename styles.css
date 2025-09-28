@@ -61,7 +61,11 @@ header {
 }
 
 .main-nav a:hover {
-    color: #2c2c2c;
+    color: #b6f464;
+}
+
+.main-nav a:focus {
+    outline: none;
 }
 
 .blog-title {
@@ -370,6 +374,11 @@ button:focus {
     line-height: 1.4;
 }
 
+/* Reduce spacing between list items on kafeer page */
+.post-content ul li {
+    margin-bottom: 5px;
+}
+
 .post-content ul li::marker {
     color: #08485f;
     font-weight: bold;
@@ -380,7 +389,6 @@ button:focus {
     cursor: pointer;
     user-select: none;
     transition: color 0.3s ease;
-    border-bottom: 1px solid #f0f0f0;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -414,6 +422,20 @@ button:focus {
 .recipe-content li {
     margin-bottom: 5px;
 }
+
+.recipe-image {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.recipe-image img {
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 
 /* Align placeholder recipe headings with recipe content */
 .post-content h3 {
