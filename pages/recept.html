@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recept - och inget mer hände</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="recept.html">Recept</a></li>
+                    <li><a href="restauranger.html">Restauranger</a></li>
+                    <li><a href="kafeer.html">Kaféer</a></li>
+                </ul>
+            </nav>
+            <h1 class="blog-title"><a href="../index.html">och inget mer hände</a></h1>
+            <p class="blog-subtitle">...or updates on what I remember from last week in Stockholm</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="post-title">Recept</h2>
+            <div class="post-content">
+                <p>Hier sammle ich Rezepte, die so gut waren, dass ich sie auf keinen Fall vergessen will, auch wenn wahrscheinlich ein Jahr vergeht, bis ich es wirklich schaffe sie nochmal zu kochen, weil längst die nächste ofengeröstete Birne meine Aufmerksamkeit an sich gerissen hat.</p>
+                
+                <h3 class="recipe-toggle" onclick="toggleRecipe('kalpudding')">Kålpudding <span class="toggle-icon">▼</span></h3>
+                <div id="kalpudding" class="recipe-content" style="display: none;">
+                    <p>Ist kein Pudding, aber ja das Rezept beinhaltet Kohl. Spitzkohl den ich zuletzt nur in seiner übertrieben populär gewordenen, meist veganen, easy Ofen-Variation konsumiert habe. Klassisch unvegan ist er aber leider mindestens so unwiderstehlich. Tusen tack an Myra für das Rezept. </p>
+                    <p>Genaue Maßangaben kann ich leider nicht machen, aber das Rezept lässt einigen Spielraum für Abweichungen.</p>
+                    <ul>
+                        <li>Zwiebel</li>
+                        <li>Knoblauch</li>
+                        <li>Butter</li>
+                        <li>(Veganes) Hackfleisch</li>
+                        <li>Spitzkohl (ein halber reicht vermutlich, geht auch mit Weißkohl)</li>
+                        <li>Vegetarische Gemüsebrühe</li>
+                        <li>Creme fraiche</li>
+                        <li>Sahne</li>
+                        <li>Sojasoße</li>
+                        <li>Maisstärke</li>
+                        <li>Preiselbeermarmelade</li>
+                        <li>Petersilie</li>
+                        <li>Kartoffeln (als Beilage, anderes funktioniert sicher auch)</li>
+                    </ul>
+                    <p>Erst das vegetarische Hackfleisch (wir hatten eine TK-Variante) in Öl in einer ofenfesten Pfanne anbraten zum Auftauen. In einer Schüssel aufbewahren und in der gleichen Pfanne in Öl und oder etwas Butter klein gehakten Knoblauch und Zwiebel anbraten, nach ein paar Minuten den kleingeschnittenen Spitzkohl dazugeben und solange anbraten bis er weich geworden ist. Etwas Crème fraiche, Sahne und Gemüsebrühe dazugeben und mit etwas Sojasoße, Salz, Pfeffer und etwas Honig abschmecken. Zum Abbinden noch etwas Maisstärke dazugeben, alles gut verrühren und für ca 20-30m in den Ofen stellen. In der Zwischenzeit Kartoffeln kochen. Wenn die Kartoffeln gut sind, die Pfanne aus dem Ofen holen, der Inhalt sollte nun etwas fest sein, etwa so wie ein Auflauf, wenn nicht war es vermutlich zu wenig Maisstärke. Alles anrichten zusammen mit Preiselbeermarmelade und eingelegten Gurken (idealerweise eingelegten Gurkenscheiben).</p>
+                    <p>Für genaue Mengenangaben, könnte man ins schwedische Rezept schauen: <a href="https://www.koket.se/vegetarisk-kalpudding-med-potatis" target="_blank" rel="noopener noreferrer">https://www.koket.se/vegetarisk-kalpudding-med-potatis</a></p>
+                </div>
+
+                <h3 class="vorschau-heading">Vorschau</h3>
+                <p>Hier noch die Platzhalter für die Rezepte, für die ich heute zu müden bin:</p>
+                <ul>
+                    <li>Belugalinsen-Tacos mit Mango-Salsa</li>
+                    <li>Zimtschnecken</li>
+                    <li>Rotkohl, Blumenkohl, Bohnen Ofengemüse mit Tahini-Balsamico-Dressing</li>
+                    <li>Di San Xian (Stir Fried Aubergine, Kartoffel and Paprika - <a href="https://omnivorescookbook.com/di-san-xian-recipe/" target="_blank" rel="noopener noreferrer">https://omnivorescookbook.com/di-san-xian-recipe/</a>)</li>
+                </ul>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 och inget mer hände. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleRecipe(recipeId) {
+            const content = document.getElementById(recipeId);
+            const icon = document.querySelector(`[onclick="toggleRecipe('${recipeId}')"] .toggle-icon`);
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                icon.textContent = '▲';
+            } else {
+                content.style.display = 'none';
+                icon.textContent = '▼';
+            }
+        }
+    </script>
+</body>
+</html>
